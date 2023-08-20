@@ -30,7 +30,7 @@ final class CustomCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = UIColor.darkGray
+        contentView.backgroundColor = UIColor.grayBlue
         contentView.layer.cornerRadius = 20
         contentView.layer.masksToBounds = true
         

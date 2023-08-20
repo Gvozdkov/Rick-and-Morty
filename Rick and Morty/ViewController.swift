@@ -7,11 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
    
     let collectionView = CustomCollectionView()
     
-    private let characterCardNumber = [1, 2, 3, 4, 5 , 6, 7, 8]
+    let cellData = [
+        (image: UIImage(named: "Rick Sanchez"), label: "Rick Sanchez"),
+        (image: UIImage(named: "Morty Smith"), label: "Morty Smith"),
+        (image: UIImage(named: "Summer Smith"), label: "Summer Smith"),
+        (image: UIImage(named: "Beth Smith"), label: "Beth Smith"),
+        (image: UIImage(named: "Rick Sanchez"), label: "Rick Sanchez"),
+        (image: UIImage(named: "Morty Smith"), label: "Morty Smith"),
+        (image: UIImage(named: "Summer Smith"), label: "Summer Smith"),
+        (image: UIImage(named: "Beth Smith"), label: "Beth Smith")
+    ]
     
     private lazy var labelCharacters: UILabel = {
         let label = UILabel()
@@ -22,6 +31,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return label
     }()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +39,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        
+        collectionView.register(CustomCell.self, forCellWithReuseIdentifier: "CustomCell")
         settingsViewController()
         
     }
     
     private func settingsViewController() {
         
-        view.backgroundColor = .gray
+        view.backgroundColor = .darkBlue
         view.addSubview(labelCharacters)
         view.addSubview(collectionView)
         
@@ -56,78 +66,20 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 }
 
 extension ViewController {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 8
-        }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
-           cell.titleLabel.text = "Rick Sanchez"
-           cell.imageView.backgroundColor = .lightGray // Just to visualize the image area
-           return cell
-       }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomCell else {
+            print("CustomCell Error")
+            return UICollectionViewCell()
+        }
+        
+        let data = cellData[indexPath.item]
+        cell.imageView.image = data.image
+        cell.titleLabel.text = data.label
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cellData.count
+    }
 }
-
-//extension ViewController: UICollectionViewDelegateFlowLayout {
-//        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//            return 0
-//        }
-//}
-
-//
-//extension ViewController: UICollectionViewDataSource {
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? CollectionViewCell else {
-//            print("Error: The dequeued cell is not an instance of CollectionViewCell.")
-//            return UICollectionViewCell()
-//        }
-//
-//        cell.titleLabel.text = "\(characterCardNumber[indexPath.row])"
-//        return cell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 8
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        var id: String
-//
-//        switch kind {
-//        case UICollectionView.elementKindSectionFooter:
-//            id = footerIdentifier
-//        default:
-//            id = ""
-//        }
-//
-//        if let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: id, for: indexPath) as? SupplementaryView {
-//            view.titleLabel.text = ""
-//            return view
-//        } else {
-//            return UICollectionReusableView()
-//        }
-//    }
-//}
-//
-//extension ViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-//        let indexPath = IndexPath(row: 0, section: section)
-//        let footerView = self.collectionView(collectionView, viewForSupplementaryElementOfKind: UICollectionView.elementKindSectionFooter, at: indexPath)
-//
-//        return footerView.systemLayoutSizeFitting(CGSize(width: collectionView.frame.width,
-//                                                                 height: UIView.layoutFittingExpandedSize.height),
-//                                                          withHorizontalFittingPriority: .required,
-//                                                          verticalFittingPriority: .fittingSizeLevel)
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: collectionView.bounds.width / 2, height: 50)
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0
-//    }
-//}
-//

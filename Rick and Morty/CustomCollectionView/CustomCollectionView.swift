@@ -17,7 +17,7 @@ final class CustomCollectionView: UICollectionView {
         
         super.init(frame: .zero, collectionViewLayout: layout)
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.backgroundColor = .gray
+        self.backgroundColor = .darkBlue
         self.register(CustomCell.self, forCellWithReuseIdentifier: "CustomCell")
         
     }

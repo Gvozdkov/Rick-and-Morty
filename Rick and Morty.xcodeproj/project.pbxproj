@@ -19,6 +19,7 @@
 		E79F7D712A92057000198570 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F7D702A92057000198570 /* CustomCollectionView.swift */; };
 		E79F7D742A922DC700198570 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F7D732A922DC700198570 /* UIColor.swift */; };
 		E7E33C832A9312BB00845BFF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E33C822A9312BB00845BFF /* CustomTableViewCell.swift */; };
+		E7E33C862A93A6F000845BFF /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E33C852A93A6F000845BFF /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E79F7D702A92057000198570 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		E79F7D732A922DC700198570 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E7E33C822A9312BB00845BFF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E7E33C852A93A6F000845BFF /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E79F7D732A922DC700198570 /* UIColor.swift */,
+				E7E33C852A93A6F000845BFF /* APIConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				E702F0B82A92B1C4002182B3 /* InfoAPIClient.swift in Sources */,
 				E75864AD2A925D0D000B6626 /* CharacteristicsViewController.swift in Sources */,
 				E79F7D742A922DC700198570 /* UIColor.swift in Sources */,
+				E7E33C862A93A6F000845BFF /* APIConstants.swift in Sources */,
 				E70779C22A8E20700035A47A /* AppDelegate.swift in Sources */,
 				E79F7D6E2A91EC9E00198570 /* CustomCell.swift in Sources */,
 				E79F7D712A92057000198570 /* CustomCollectionView.swift in Sources */,

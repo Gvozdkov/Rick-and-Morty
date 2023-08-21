@@ -15,7 +15,7 @@ class InfoAPIClient {
     weak var delegate: InfoAPIResponseDelegate?
 
     func fetchCharacterDetails() {
-        let urlString = "https://rickandmortyapi.com/api/character"
+        let urlString = APIRequest
 
         if let url = URL(string: urlString) {
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -51,4 +51,3 @@ class InfoAPIClient {
         }
     }
 }
-

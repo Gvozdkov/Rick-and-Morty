@@ -11,7 +11,7 @@ final class CustomCell: UICollectionViewCell {
     
     lazy var imageView: UIImageView = {
         var imageView = UIImageView()
-        imageView.image = UIImage(named: "Rick Sanchez")
+//        imageView.image = APIimageView 
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(imageView)
@@ -56,4 +56,9 @@ final class CustomCell: UICollectionViewCell {
             titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor) 
         ])
     }
+    func configure(with data: (image: UIImage?, label: String)) {
+        imageView.image = data.image
+        titleLabel.text = data.label
+    }
+    
 }

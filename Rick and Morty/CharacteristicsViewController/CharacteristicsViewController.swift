@@ -13,9 +13,9 @@ final class CharacteristicsViewController: UIViewController, InfoAPIResponseDele
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var labelStatus: UILabel!
     
-    @IBOutlet private var labelAnswerSpecies: UILabel!
-    @IBOutlet private var labelAnswerType: UILabel!
-    @IBOutlet private var labelAnswerGender: UILabel!
+    @IBOutlet var labelAnswerSpecies: UILabel!
+    @IBOutlet var labelAnswerType: UILabel!
+    @IBOutlet var labelAnswerGender: UILabel!
     @IBOutlet var labelAnswerPlanet: UILabel!
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
@@ -29,7 +29,10 @@ final class CharacteristicsViewController: UIViewController, InfoAPIResponseDele
     }
     
     func didReceiveCharacterDetails(species: String, type: String, gender: String, planet: String) {
+
         DispatchQueue.main.async {
+            self.nameLabel.text = APILabel
+            self.imageView.image = APIimageView
             self.labelAnswerSpecies.text = species
             self.labelAnswerType.text = type
             self.labelAnswerGender.text = gender
@@ -42,6 +45,7 @@ final class CharacteristicsViewController: UIViewController, InfoAPIResponseDele
     }
     
     @IBAction func actionButtonBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

@@ -41,7 +41,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         collectionView.register(CustomCell.self, forCellWithReuseIdentifier: "CustomCell")
         settingsViewController()
-        
+    
     }
     
     private func settingsViewController() {
@@ -81,5 +81,31 @@ extension ViewController {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cellData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedData = cellData[indexPath.item]
+
+        if selectedData.label == "Rick Sanchez" {
+            APIimageView = UIImage(named: "Rick Sanchez")
+            APILabel = "Rick Sanchez"
+            APIRequest = APIConstants.rickSanchez
+        } else if selectedData.label == "Morty Smith" {
+            APIimageView = UIImage(named: "Morty Smith")
+            APILabel = "Morty Smith"
+            APIRequest = APIConstants.mortySmith
+        } else if selectedData.label == "Summer Smith" {
+            APIimageView = UIImage(named: "Summer Smith")
+            APILabel = "Summer Smith"
+            APIRequest = APIConstants.summerSmith
+        } else if selectedData.label == "Beth Smith" {
+            APIimageView = UIImage(named: "Beth Smith")
+            APILabel = "Beth Smith"
+            APIRequest = APIConstants.bethSmith
+        }
+        
+        
+        
+        performSegue(withIdentifier: "CharacteristicsViewController", sender: selectedData)
     }
 }

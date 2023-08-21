@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +13,159 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Label Rick and Morty" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-vo-ptO">
+                                <rect key="frame" x="118" y="223" width="140" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="5sh-5r-EQ3"/>
+                                    <constraint firstAttribute="height" constant="40" id="8o4-S5-mCA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Constellation" translatesAutoresizingMaskIntoConstraints="NO" id="TAx-Of-f0o">
+                                <rect key="frame" x="118" y="299" width="140" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="QsE-ra-jyM"/>
+                                    <constraint firstAttribute="height" constant="228" id="VL7-Q6-yYS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-FW-rtD" userLabel="Ellipse 1">
+                                <rect key="frame" x="34" y="157" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="PNt-dY-dRr"/>
+                                    <constraint firstAttribute="height" constant="4" id="gN5-bS-Esn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="q1C-yq-VJK" userLabel="Ellipse 2">
+                                <rect key="frame" x="219" y="165" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="2Zc-nt-MRi"/>
+                                    <constraint firstAttribute="height" constant="4" id="iNf-ct-Whv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="Mjr-bh-xa4" userLabel="Ellipse 3">
+                                <rect key="frame" x="346" y="182" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="GXq-Nr-uZC"/>
+                                    <constraint firstAttribute="height" constant="4" id="lje-VG-h1q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="cJ2-im-U6J" userLabel="Ellipse 4">
+                                <rect key="frame" x="331" y="241" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="bse-lB-dcO"/>
+                                    <constraint firstAttribute="height" constant="8" id="hMi-AZ-Sfs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="OoV-tc-3G0" userLabel="Ellipse 5">
+                                <rect key="frame" x="70" y="293" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="Hpq-jN-mDe"/>
+                                    <constraint firstAttribute="height" constant="4" id="Ht1-9J-ICv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="Ct3-Vb-efN" userLabel="Ellipse 6">
+                                <rect key="frame" x="16" y="394" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="hfA-u3-65o"/>
+                                    <constraint firstAttribute="height" constant="8" id="sIj-uq-W1Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="Eif-TX-go1" userLabel="Ellipse 7">
+                                <rect key="frame" x="336" y="492" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="nbO-iN-2Qs"/>
+                                    <constraint firstAttribute="height" constant="8" id="xoa-Ne-XF4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="g0s-nH-ioA" userLabel="Ellipse 8">
+                                <rect key="frame" x="179" y="617" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="gys-lf-yGq"/>
+                                    <constraint firstAttribute="width" constant="4" id="hti-nd-C3E"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="SE0-JM-Mof" userLabel="Ellipse 9">
+                                <rect key="frame" x="47" y="587" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="X9s-9R-6op"/>
+                                    <constraint firstAttribute="height" constant="4" id="aIE-px-kSY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="yub-cX-cuh" userLabel="Ellipse 10">
+                                <rect key="frame" x="275" y="675" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="LHR-jH-OoG"/>
+                                    <constraint firstAttribute="width" constant="8" id="zb9-95-y5f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="N1D-19-Hl0" userLabel="Ellipse 11">
+                                <rect key="frame" x="28" y="703" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="JvE-9V-EVc"/>
+                                    <constraint firstAttribute="width" constant="4" id="n0J-St-w1B"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="q5m-Ws-vtC" userLabel="Ellipse 12">
+                                <rect key="frame" x="156" y="766" width="4" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="13t-Yo-wit"/>
+                                    <constraint firstAttribute="width" constant="4" id="tSF-ro-bMM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-KN-mBO" userLabel="Ellipse 13">
+                                <rect key="frame" x="327" y="799" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="FlE-sj-QYu"/>
+                                    <constraint firstAttribute="height" constant="8" id="r8C-Ya-6t8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.019607843829999999" green="0.047058824450000002" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yub-cX-cuh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="275" id="0tn-bT-yoc"/>
+                            <constraint firstItem="q5m-Ws-vtC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="707" id="5bu-UJ-5JP"/>
+                            <constraint firstItem="Eif-TX-go1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="433" id="Aeb-wL-miX"/>
+                            <constraint firstItem="ZOQ-vo-ptO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="BCj-nc-BPD"/>
+                            <constraint firstItem="Mjr-bh-xa4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="346" id="Ch1-cC-cud"/>
+                            <constraint firstItem="QOk-KN-mBO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="327" id="E07-vi-zth"/>
+                            <constraint firstItem="Eif-TX-go1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="336" id="FDF-f3-n8r"/>
+                            <constraint firstItem="Ct3-Vb-efN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="JrY-fm-N49"/>
+                            <constraint firstItem="qf5-FW-rtD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="Kd3-La-KKV"/>
+                            <constraint firstItem="cJ2-im-U6J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="331" id="Ktj-me-UPS"/>
+                            <constraint firstItem="N1D-19-Hl0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="Lnp-n3-NS8"/>
+                            <constraint firstItem="TAx-Of-f0o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="NYb-Rv-LIZ"/>
+                            <constraint firstItem="SE0-JM-Mof" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="PEU-bx-z7y"/>
+                            <constraint firstItem="g0s-nH-ioA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="179" id="QQv-aY-mso"/>
+                            <constraint firstItem="q1C-yq-VJK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="219" id="Rsc-K1-8RP"/>
+                            <constraint firstItem="OoV-tc-3G0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="234" id="UNe-fH-Ldo"/>
+                            <constraint firstItem="SE0-JM-Mof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="528" id="V3H-PM-gIR"/>
+                            <constraint firstItem="cJ2-im-U6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="182" id="VNg-yr-PBN"/>
+                            <constraint firstItem="g0s-nH-ioA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="558" id="XrM-hw-cgk"/>
+                            <constraint firstItem="Ct3-Vb-efN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="335" id="ZRP-mx-DCy"/>
+                            <constraint firstItem="yub-cX-cuh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="616" id="eur-Rh-Vw3"/>
+                            <constraint firstItem="q1C-yq-VJK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="g0f-nr-5Go"/>
+                            <constraint firstItem="N1D-19-Hl0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="644" id="hkr-pG-GRV"/>
+                            <constraint firstItem="OoV-tc-3G0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="iHJ-cB-1hh"/>
+                            <constraint firstItem="QOk-KN-mBO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="740" id="kh1-bP-cZI"/>
+                            <constraint firstItem="ZOQ-vo-ptO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="nVZ-Tg-J4G"/>
+                            <constraint firstItem="qf5-FW-rtD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="nY1-Po-Aoo"/>
+                            <constraint firstItem="Mjr-bh-xa4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="rJl-k0-C5F"/>
+                            <constraint firstItem="TAx-Of-f0o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="rNd-Ss-g5e"/>
+                            <constraint firstItem="q5m-Ws-vtC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="zOi-bS-dbL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Constellation" width="314" height="511"/>
+        <image name="Ellipse" width="4" height="4"/>
+        <image name="Label Rick and Morty" width="140" height="40"/>
+    </resources>
 </document>

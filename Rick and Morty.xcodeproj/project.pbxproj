@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E702F0B82A92B1C4002182B3 /* InfoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702F0B72A92B1C4002182B3 /* InfoAPIClient.swift */; };
 		E70779C22A8E20700035A47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70779C12A8E20700035A47A /* AppDelegate.swift */; };
 		E70779C42A8E20700035A47A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70779C32A8E20700035A47A /* SceneDelegate.swift */; };
 		E70779C62A8E20700035A47A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70779C52A8E20700035A47A /* ViewController.swift */; };
 		E70779C92A8E20700035A47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70779C72A8E20700035A47A /* Main.storyboard */; };
 		E70779CB2A8E20710035A47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70779CA2A8E20710035A47A /* Assets.xcassets */; };
 		E70779CE2A8E20710035A47A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70779CC2A8E20710035A47A /* LaunchScreen.storyboard */; };
+		E75864AD2A925D0D000B6626 /* CharacteristicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75864AC2A925D0D000B6626 /* CharacteristicsViewController.swift */; };
 		E79F7D6E2A91EC9E00198570 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F7D6D2A91EC9E00198570 /* CustomCell.swift */; };
 		E79F7D712A92057000198570 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F7D702A92057000198570 /* CustomCollectionView.swift */; };
 		E79F7D742A922DC700198570 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F7D732A922DC700198570 /* UIColor.swift */; };
+		E7E33C832A9312BB00845BFF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E33C822A9312BB00845BFF /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E702F0B72A92B1C4002182B3 /* InfoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAPIClient.swift; sourceTree = "<group>"; };
 		E70779BE2A8E20700035A47A /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70779C12A8E20700035A47A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E70779C32A8E20700035A47A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +31,11 @@
 		E70779CA2A8E20710035A47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E70779CD2A8E20710035A47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E70779CF2A8E20710035A47A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75864AC2A925D0D000B6626 /* CharacteristicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicsViewController.swift; sourceTree = "<group>"; };
 		E79F7D6D2A91EC9E00198570 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E79F7D702A92057000198570 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		E79F7D732A922DC700198570 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E7E33C822A9312BB00845BFF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +73,23 @@
 				E70779C32A8E20700035A47A /* SceneDelegate.swift */,
 				E70779C52A8E20700035A47A /* ViewController.swift */,
 				E79F7D6F2A92056200198570 /* CustomCollectionView */,
+				E75864AB2A925CF0000B6626 /* CharacteristicsViewController */,
 				E70779C72A8E20700035A47A /* Main.storyboard */,
 				E70779CC2A8E20710035A47A /* LaunchScreen.storyboard */,
 				E70779CA2A8E20710035A47A /* Assets.xcassets */,
 				E70779CF2A8E20710035A47A /* Info.plist */,
 			);
 			path = "Rick and Morty";
+			sourceTree = "<group>";
+		};
+		E75864AB2A925CF0000B6626 /* CharacteristicsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E75864AC2A925D0D000B6626 /* CharacteristicsViewController.swift */,
+				E7E33C812A93129800845BFF /* API */,
+				E7E33C842A9312BF00845BFF /* CustomTableViewCell */,
+			);
+			path = CharacteristicsViewController;
 			sourceTree = "<group>";
 		};
 		E79F7D6F2A92056200198570 /* CustomCollectionView */ = {
@@ -90,6 +107,22 @@
 				E79F7D732A922DC700198570 /* UIColor.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E7E33C812A93129800845BFF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E702F0B72A92B1C4002182B3 /* InfoAPIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E7E33C842A9312BF00845BFF /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7E33C822A9312BB00845BFF /* CustomTableViewCell.swift */,
+			);
+			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E33C832A9312BB00845BFF /* CustomTableViewCell.swift in Sources */,
 				E70779C62A8E20700035A47A /* ViewController.swift in Sources */,
+				E702F0B82A92B1C4002182B3 /* InfoAPIClient.swift in Sources */,
+				E75864AD2A925D0D000B6626 /* CharacteristicsViewController.swift in Sources */,
 				E79F7D742A922DC700198570 /* UIColor.swift in Sources */,
 				E70779C22A8E20700035A47A /* AppDelegate.swift in Sources */,
 				E79F7D6E2A91EC9E00198570 /* CustomCell.swift in Sources */,

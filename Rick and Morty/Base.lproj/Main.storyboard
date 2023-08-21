@@ -22,7 +22,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hUm-nQ-FSC"/>
                     <connections>
-                        <segue destination="Pmc-8g-a0O" kind="show" identifier="CharacteristicsViewController" id="yoC-A5-1RX"/>
+                        <segue destination="Pmc-8g-a0O" kind="presentation" identifier="CharacteristicsViewController" modalPresentationStyle="fullScreen" id="yoC-A5-1RX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -34,7 +34,7 @@
             <objects>
                 <viewController restorationIdentifier="   " title="Characteristics View Controller" id="Pmc-8g-a0O" customClass="CharacteristicsViewController" customModule="Rick_and_Morty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OjB-z0-pIB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-vA-oCa" userLabel="Button back">
@@ -104,7 +104,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FVY-2p-sQO">
-                                <rect key="frame" x="24" y="700" width="345" height="142"/>
+                                <rect key="frame" x="24" y="700" width="345" height="152"/>
                                 <color key="backgroundColor" name="grayBlue"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
@@ -112,6 +112,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="LBc-En-xvB">
+                                <rect key="frame" x="0.0" y="399" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LBc-En-xvB" id="5vj-zr-TgD">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGf-LL-ME6" userLabel="View Info">
                                 <rect key="frame" x="24" y="360" width="345" height="124"/>
                                 <subviews>
@@ -283,6 +291,7 @@
                         <outlet property="labelAnswerType" destination="H1v-Dv-Idw" id="Icw-Ls-Ra7"/>
                         <outlet property="labelStatus" destination="CaR-LS-4kx" id="bUG-Mb-hop"/>
                         <outlet property="nameLabel" destination="sqw-ZZ-Kmd" id="5Eq-01-vlO"/>
+                        <outlet property="tableView" destination="FVY-2p-sQO" id="i1m-4n-BxN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swi-Xc-86h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

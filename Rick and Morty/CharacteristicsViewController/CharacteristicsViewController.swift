@@ -13,6 +13,7 @@ final class CharacteristicsViewController: UIViewController, InfoAPIResponseDele
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var labelStatus: UILabel!
     
+    @IBOutlet var tableView: UITableView!
     @IBOutlet var labelAnswerSpecies: UILabel!
     @IBOutlet var labelAnswerType: UILabel!
     @IBOutlet var labelAnswerGender: UILabel!
@@ -22,9 +23,9 @@ final class CharacteristicsViewController: UIViewController, InfoAPIResponseDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let client = InfoAPIClient()
         client.delegate = self
-
         client.fetchCharacterDetails()
     }
     
@@ -48,4 +49,3 @@ final class CharacteristicsViewController: UIViewController, InfoAPIResponseDele
         self.dismiss(animated: true, completion: nil)
     }
 }
-

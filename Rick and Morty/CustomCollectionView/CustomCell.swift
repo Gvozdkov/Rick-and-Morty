@@ -11,7 +11,6 @@ final class CustomCell: UICollectionViewCell {
     
     lazy var imageView: UIImageView = {
         var imageView = UIImageView()
-//        imageView.image = APIimageView 
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(imageView)
